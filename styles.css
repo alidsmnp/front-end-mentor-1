@@ -1,0 +1,155 @@
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  width: 100%;
+}
+
+body {
+  background-color: hsl(0, 0%, 100%);
+  font-size: 16px;
+  font-family: 'Outfit', sans-serif;
+}
+
+img {
+  border-radius: 20px;
+  width: 100%;
+  height: auto;
+}
+
+h1 {
+  font-family: 'Young Serif', serif;
+}
+
+h2 {
+  color: hsl(14, 45%, 36%);
+  font-family: 'Young Serif', serif;
+  font-weight: 300;
+}
+
+h3 {
+  color: hsl(330, 100%, 32%);
+  font-size: 1.2em;
+}
+
+.list {
+  background-color: hsla(330, 100%, 98%, .6);
+}
+
+.item1 {
+  list-style-type: disc;
+}
+
+.large, .salt, .pepper, .oil, .optional {
+  padding-left: 10px;
+  font-size: 16px;
+  font-weight: 100;
+}
+
+li::marker {
+  color: hsl(14, 45%, 36%);
+}
+
+ol::marker {
+  font-weight: 600;
+}
+
+.beat, .heat, .cook, .add, .fold, .enjoy {
+  padding-left: 10px;
+  font-weight: normal;
+  font-size: 16px;
+}
+
+.menu {
+  max-width: 400px;
+  margin: 20px auto;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+
+.menu2 {
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #ddd;
+  padding: 10px 0;
+}
+
+.menu2:last-child {
+  border-bottom: none;
+}
+
+.detail {
+  font-weight: bold;
+  color: #555;
+}
+
+.attribution {
+  background-color: #1a1a1a;
+  color: #ffffff;
+  padding: 20px;
+  text-align: center;
+  font-family: 'Arial', sans-serif;
+  position: relative;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+  border-radius: 8px;
+  margin-top: 20px;
+}
+
+.attribution a {
+  color: #4CAF50;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.attribution a:hover {
+  color: #81C784;
+  text-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
+}
+
+.attribution::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 200%;
+  height: 100%;
+  background: linear-gradient(45deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.2));
+  transform: translateX(-50%);
+  z-index: -1;
+  border-radius: 8px;
+}
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 1.5em;
+  }
+
+  h2, h3 {
+    font-size: 1.2em;
+  }
+
+  .item1, .beat, .heat, .cook, .add, .fold, .enjoy {
+    font-size: 14px;
+  }
+
+  .menu {
+    max-width: 90%;
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 1.3em;
+  }
+
+  .menu {
+    padding: 15px;
+  }
+}
